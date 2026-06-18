@@ -1,52 +1,57 @@
-header {
-    background: #4CAF50; /* สีพื้นหลังของส่วนหัว */
-    color: white; /* สีข้อความ */
-    padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
-    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์แสดงผลงานและทักษะของ Sirirat">
+    <title>ผลงานและทักษะของ Sirirat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header>
+        <h1>สวัสดี! ฉันคือ Sirirat</h1>
+        <p>นี่คือผลงานและความภาคภูมิใจของฉัน</p>
+    </header>
+    
+    <!-- ส่วนเกี่ยวกับตัวเอง -->
+    <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>ฉันเป็นนักเรียนที่มีความสนใจและมุ่งมั่นในด้านการศึกษาต่อ 
+           รวมถึงมีความหลงใหลในการดูแลเด็กระดับชั้นปฐมวัย เพื่อพัฒนาศักยภาพและความพร้อมของเด็ก ๆ ในอนาคต</p>
+    </section>
 
-header h1 {
-    margin: 0;
-}
+    <!-- ส่วนแสดงผลงาน -->
+    <section id="projects">
+        <h2>ผลงานของฉัน</h2>
+        <div class="project">
+            <h3>เว็บไซต์ Portfolio</h3>
+            <p>เว็บไซต์แนะนำตัวและผลงานที่ฉันสร้างขึ้นเพื่อแสดงความสามารถของฉัน</p>
+        </div>
+       <div class="project">
+            <h3>แอปพลิเคชันจัดการงาน</h3>
+            <p>แอปพลิเคชันที่ช่วยให้ผู้ใช้งานจัดการงานได้อย่างมีประสิทธิภาพ</p>
+        </div>
+    </section>
 
-header p {
-    margin: 5px 0 0; /* ตั้งค่าระยะห่างของข้อความรอง */
-}
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px; /* จำกัดความกว้างของเนื้อหา */
-    background: white; /* พื้นหลังสีขาว */
-    border-radius: 8px; /* ทำให้ขอบมน */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบา ๆ */
-}
-h2 {
-    color: #4CAF50; /* สีของหัวข้อ */
-}
-body {
-    font-family: Arial, sans-serif; /* ตั้งค่าฟอนต์หลัก */
-    line-height: 1.6; /* ระยะห่างระหว่างบรรทัดเพื่อให้อ่านง่าย */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* สีพื้นหลังของเว็บ */
-    color: #333; /* สีข้อความหลัก */
-}
-.project {
-    margin-bottom: 20px;
-}
+    <!-- ส่วนแสดงทักษะ -->
+    <section id="skills">
+        <h2>ทักษะของฉัน</h2>
+        <ul>
+            <li>ถ่ายรูป</li>
+            <li>ทำอาหาร</li>
+            <li>การวาดรูป</li>
+        </ul>
+    </section>
 
-.project h3 {
-    margin: 0 0 10px;
-    color: #333;
-}
-ul {
-    list-style-type: square; /* ใช้จุดสี่เหลี่ยมแทนจุดกลม */
-    padding-left: 20px;
-}
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333; /* สีพื้นหลังเข้ม */
-    color: white;
-    margin-top: 20px;
-}
+    <!-- ส่วนติดต่อและลิขสิทธิ์ -->
+    <footer>
+        <p>ติดต่อฉันได้ที่:
+            <a href="mailto:S34513@banbung.ac.th">S34513@banbung.ac.th</a>
+        </p>
+        <p>&copy; <span id="year"></span> Sirirat. All rights Reserved.</p>
+    </footer>
+   <!-- ลิงก์ไปยัง JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
