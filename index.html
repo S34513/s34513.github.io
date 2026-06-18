@@ -3,29 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์แสดงผลงานและทักษะของ Somchai">
-    <title>ผลงานและทักษะของ SOMCHAT</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="เว็บไซต์แสดงผลงานและทักษะของ Sirirat">
+    <title>ผลงานและทักษะของ Sirirat</title>
+    
+    <!-- เพิ่มโค้ดตกแต่งสีสันและหน้าตาเว็บตรงนี้ -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf8f2; /* สีพื้นหลังครีมละมุน */
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        /* ส่วนหัวของเว็บไซต์ */
+        header {
+            background: linear-gradient(135deg, #ffb7b2, #ffdac1); /* สีไล่เฉดชมพู-ส้มพาสเทล */
+            color: #5d4037;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* จัดการกรอบเนื้อหาแต่ละส่วน */
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 16px; /* ขอบมนดูเป็นมิตร */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        h2 {
+            color: #e07a5f; /* หัวข้อสีส้มอิฐพาสเทล */
+            border-bottom: 3px solid #f4f1de;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* ส่วนผลงาน */
+        .project {
+            background-color: #f7f9f9;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #b5e2fa; /* เส้นขอบสีฟ้าพาสเทล */
+            border-radius: 4px;
+        }
+
+        .project h3 {
+            margin: 0 0 5px 0;
+            color: #3d5a80;
+        }
+
+        .project p {
+            margin: 0;
+        }
+
+        /* ส่วนทักษะ */
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #skills li {
+            background-color: #e8f5e9; /* พื้นหลังสีเขียวมินต์อ่อน */
+            color: #2e7d32;
+            padding: 8px 16px;
+            border-radius: 20px; /* ทำเป็นปุ่มวงรีน่ารักๆ */
+            font-weight: bold;
+        }
+
+        /* ส่วนท้ายเว็บไซต์ */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #5d4037; /* สีน้ำตาลอบอุ่น */
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffdac1;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- ส่วนหัวของเว็บไซต์ -->
     <header>
-        <h1>สวัสดี! ฉันคือ SOMCHAT</h1>
-        <p>นี่คือผลงานและความภาคภูมิใจของผม</p>
+        <h1>สวัสดี! ฉันคือ Sirirat</h1>
+        <p>นี่คือผลงานและความภาคภูมิใจของฉัน</p>
     </header>
+    
     <!-- ส่วนเกี่ยวกับตัวเอง -->
     <section id="about">
-        <h2>เกี่ยวกับผม</h2>
-        <p>ผมเป็นนักพัฒนาเว็บที่มีความหลงใหลในการสร้างสรรค์สิ่งใหม่ ๆ
-           ผมมีความเชี่ยวชาญและทักษะที่พัฒนาอย่างต่อเนื่อง</p>
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>ฉันเป็นนักเรียนที่มีความสนใจและมุ่งมั่นในด้านการศึกษาต่อ 
+           รวมถึงมีความหลงใหลในการดูแลเด็กระดับชั้นปฐมวัย เพื่อพัฒนาศักยภาพและความพร้อมของเด็ก ๆ ในอนาคต</p>
     </section>
 
     <!-- ส่วนแสดงผลงาน -->
     <section id="projects">
-        <h2>ผลงานของผม</h2>
+        <h2>ผลงานของฉัน</h2>
         <div class="project">
             <h3>เว็บไซต์ Portfolio</h3>
-            <p>เว็บไซต์แนะนำตัวและผลงานที่ผมสร้างขึ้นเพื่อแสดงความสามารถของผม</p>
+            <p>เว็บไซต์แนะนำตัวและผลงานที่ฉันสร้างขึ้นเพื่อแสดงความสามารถของฉัน</p>
         </div>
        <div class="project">
             <h3>แอปพลิเคชันจัดการงาน</h3>
@@ -35,21 +139,20 @@
 
     <!-- ส่วนแสดงทักษะ -->
     <section id="skills">
-        <h2>ทักษะของผม</h2>
+        <h2>ทักษะของฉัน</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Django</li>
-            <li>Git และ GitHub</li>
-            <li>การออกแบบ UI/UX</li>
+            <li>ถ่ายรูป</li>
+            <li>ทำอาหาร</li>
+            <li>การวาดรูป</li>
         </ul>
     </section>
 
     <!-- ส่วนติดต่อและลิขสิทธิ์ -->
     <footer>
-        <p>ติดต่อผมได้ที่:
-            <a href="mailto:somchai@example.com">somchai@example.com</a>
+        <p>ติดต่อฉันได้ที่:
+            <a href="mailto:S34513@banbung.ac.th">S34513@banbung.ac.th</a>
         </p>
-        <p>&copy; <span id="year"></span> SOMCHAT. All rights Reserved.</p>
+        <p>&copy; <span id="year"></span> Sirirat. All rights Reserved.</p>
     </footer>
    <!-- ลิงก์ไปยัง JavaScript -->
     <script src="script.js"></script>
