@@ -1,57 +1,96 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์แสดงผลงานและทักษะของ Sirirat">
-    <title>ผลงานและทักษะของ Sirirat</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- ส่วนหัวของเว็บไซต์ -->
-    <header>
-        <h1>สวัสดี! ฉันคือ Sirirat</h1>
-        <p>นี่คือผลงานและความภาคภูมิใจของฉัน</p>
-    </header>
-    
-    <!-- ส่วนเกี่ยวกับตัวเอง -->
-    <section id="about">
-        <h2>เกี่ยวกับฉัน</h2>
-        <p>ฉันเป็นนักเรียนที่มีความสนใจและมุ่งมั่นในด้านการศึกษาต่อ 
-           รวมถึงมีความหลงใหลในการดูแลเด็กระดับชั้นปฐมวัย เพื่อพัฒนาศักยภาพและความพร้อมของเด็ก ๆ ในอนาคต</p>
-    </section>
+/* 1. การตั้งค่าทั่วไปของหน้าเว็บ (body) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5; /* เปลี่ยนพื้นหลังเว็บเป็นสีชมพูระเรื่ออ่อนๆ */
+    color: #4a4a4a;
+}
 
-    <!-- ส่วนแสดงผลงาน -->
-    <section id="projects">
-        <h2>ผลงานของฉัน</h2>
-        <div class="project">
-            <h3>เว็บไซต์ Portfolio</h3>
-            <p>เว็บไซต์แนะนำตัวและผลงานที่ฉันสร้างขึ้นเพื่อแสดงความสามารถของฉัน</p>
-        </div>
-       <div class="project">
-            <h3>แอปพลิเคชันจัดการงาน</h3>
-            <p>แอปพลิเคชันที่ช่วยให้ผู้ใช้งานจัดการงานได้อย่างมีประสิทธิภาพ</p>
-        </div>
-    </section>
+/* 2. ส่วนหัว (header) */
+header {
+    background: #ffb6c1; /* เปลี่ยนเป็นสีชมพู Light Pink */
+    color: #ffffff; /* ตัวอักษรสีขาว */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    <!-- ส่วนแสดงทักษะ -->
-    <section id="skills">
-        <h2>ทักษะของฉัน</h2>
-        <ul>
-            <li>ถ่ายรูป</li>
-            <li>ทำอาหาร</li>
-            <li>การวาดรูป</li>
-        </ul>
-    </section>
+header h1 {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 
-    <!-- ส่วนติดต่อและลิขสิทธิ์ -->
-    <footer>
-        <p>ติดต่อฉันได้ที่:
-            <a href="mailto:S34513@banbung.ac.th">S34513@banbung.ac.th</a>
-        </p>
-        <p>&copy; <span id="year"></span> Sirirat. All rights Reserved.</p>
-    </footer>
-   <!-- ลิงก์ไปยัง JavaScript -->
-    <script src="script.js"></script>
-</body>
-</html>
+header p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* 3. ส่วนเนื้อหา (section) */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px; /* ปรับขอบให้มนขึ้นอีกนิด ดูนุ่มนวล */
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.2); /* เงาสีชมพูจางๆ */
+}
+
+/* 4. หัวข้อ (h2) */
+h2 {
+    color: #ff6b8b; /* เปลี่ยนหัวข้อใหญ่เป็นสีชมพูเข้มเด่นชัด */
+    border-bottom: 2px solid #ffe3e8; /* เพิ่มเส้นใต้หัวข้อสีชมพูอ่อน */
+    padding-bottom: 5px;
+}
+
+/* 5. ส่วนแสดงโปรเจกต์ (.project) */
+.project {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #fff9fa; /* เพิ่มพื้นหลังสีชมพูจางมากๆ ในกล่องโปรเจกต์ */
+    border-radius: 8px;
+    border-left: 4px solid #ffb6c1; /* เพิ่มเส้นขอบซ้ายสีชมพู */
+}
+
+.project h3 {
+    margin: 0 0 10px;
+    color: #ff527b; /* เปลี่ยนชื่อโปรเจกต์เป็นสีชมพูเข้ม */
+}
+
+/* 6. รายการทักษะ (ul) */
+ul {
+    list-style-type: none; /* เอาจุดสี่เหลี่ยมออก */
+    padding-left: 0;
+    display: flex; /* จัดเรียงทักษะเป็นแนวนอนสวยๆ */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* เพิ่มการตกแต่งให้รายการทักษะดูเหมือนปุ่มน่ารักๆ */
+ul li {
+    background-color: #ffe3e8; /* พื้นหลังปุ่มทักษะสีชมพูอ่อน */
+    color: #ff527b; /* ตัวอักษรทักษะสีชมพูเข้ม */
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* 7. ส่วนท้าย (footer) */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #ffb6c1; /* เปลี่ยนสีพื้นหลังท้ายเว็บเป็นสีชมพูเข้ากับ Header */
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffe3e8; /* เวลาเอาเมาส์ชี้ลิงก์จะเปลี่ยนเป็นสีชมพูอ่อน */
+}
