@@ -53,40 +53,26 @@
             margin-top: 0;
         }
 
-        /* ส่วนผลงานทั่วไป */
+        /* ส่วนผลงาน */
         .project {
             background-color: #f7f9f9;
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            border-left: 5px solid #ffdac1; /* เส้นขอบสีส้มพาสเทล */
-            border-radius: 4px;
-        }
-
-        .project h3 {
-            margin: 0 0 5px 0;
-            color: #5d4037;
-        }
-
-        /* สไตล์พิเศษสำหรับผลงานวิชาคอมพิวเตอร์ */
-        .comp-project {
-            background-color: #f0f9ff;
             padding: 15px 20px;
             margin-bottom: 15px;
             border-left: 5px solid #b5e2fa; /* เส้นขอบสีฟ้าพาสเทล */
             border-radius: 4px;
         }
 
-        .comp-project h3 {
+        .project h3 {
             margin: 0 0 5px 0;
             color: #3d5a80;
         }
 
-        .project p, .comp-project p {
+        .project p {
             margin: 0;
         }
 
-        /* ส่วนทักษะ */
-        #skills ul {
+        /* ส่วนทักษะทั่วไป */
+        .skills-list {
             list-style-type: none;
             padding: 0;
             display: flex;
@@ -94,7 +80,7 @@
             gap: 10px;
         }
 
-        #skills li {
+        .skills-list li {
             background-color: #e8f5e9; /* พื้นหลังสีเขียวมินต์อ่อน */
             color: #2e7d32;
             padding: 8px 16px;
@@ -102,11 +88,17 @@
             font-weight: bold;
         }
 
+        /* สไตล์พิเศษสำหรับปุ่มทักษะคอมพิวเตอร์ (สีฟ้าพาสเทล) */
+        .tech-skills li {
+            background-color: #e0f2fe; 
+            color: #0369a1;
+        }
+
         /* ส่วนท้ายเว็บไซต์ */
         footer {
             text-align: center;
             padding: 30px 20px;
-            background-color: #5d4037; /* สีน้ำตาลอ่อน */
+            background-color: #5d4037; /* สีน้ำตาลอบอุ่น */
             color: #ffffff;
             margin-top: 50px;
         }
@@ -134,27 +126,39 @@
         <p>ฉันเป็นนักเรียนที่มีความสนใจและมุ่งมั่นในด้านการศึกษาต่อ 
            รวมถึงมีความหลงใหลในการดูแลเด็กระดับชั้นปฐมวัย เพื่อพัฒนาศักยภาพและความพร้อมของเด็ก ๆ ในอนาคต</p>
     </section>
-   <section id="skills">
-        <h2>ทักษะของฉัน</h2>
-        <ul>
+
+    <section id="projects">
+        <h2>ผลงานของฉัน</h2>
+        <div class="project">
+            <h3>เว็บไซต์ Portfolio</h3>
+            <p>เว็บไซต์แนะนำตัวและผลงานที่ฉันสร้างขึ้นเพื่อแสดงความสามารถของฉัน</p>
+        </div>
+       <div class="project">
+            <h3>แอปพลิเคชันจัดการงาน</h3>
+            <p>แอปพลิเคชันที่ช่วยให้ผู้ใช้งานจัดการงานได้อย่างมีประสิทธิภาพ</p>
+        </div>
+    </section>
+
+    <section id="tech-skills">
+        <h2>ทักษะคอมพิวเตอร์และเทคโนโลยี</h2>
+        <ul class="skills-list tech-skills">
+            <li>HTML / CSS พื้นฐาน</li>
+            <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+            <li>การออกแบบสื่อดิจิทัล (Canva)</li>
+            <li>การตัดต่อวิดีโอเบื้องต้น</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>ทักษะทั่วไป</h2>
+        <ul class="skills-list">
             <li>ทักษะถ่ายรูป</li>
             <li>ทักษะการทำอาหาร</li>
             <li>ทักษะการวาดรูป</li>
             <li>ทักษะการใช้ภาษามือเบื้องต้น</li>
         </ul>
     </section>
-  <section id="computer-projects">
-        <h2>ผลงานวิชาคอมพิวเตอร์</h2>
-        <div class="comp-project">
-            <h3>เว็บไซต์ Portfolio ของฉัน</h3>
-            <p>ออกแบบและพัฒนาเว็บไซต์แนะนำตัวส่วนตัวโดยใช้โครงสร้าง HTML และตกแต่งความสวยงามด้วย CSS เพื่อนำเสนอข้อมูลอย่างเป็นระบบ</p>
-        </div>
-        <div class="comp-project">
-            <h3>แอปพลิเคชันระบบจัดการงาน</h3>
-            <p>โปรเจกต์พัฒนาเว็บแอปพลิเคชันขนาดเล็กที่ช่วยให้ผู้ใช้งานสามารถจัดลำดับความสำคัญและบันทึกงานที่ต้องทำในแต่ละวันได้อย่างมีประสิทธิภาพ</p>
-            <p>การออกแบบและจัดทำสื่อเพื่อการเรียนรู้สำหรับเด็ก เพื่อส่งเสริมพัฒนาการและความพร้อมในด้านต่าง ๆ</p>
-        </div>
-    </section>
+
     <footer>
         <p>ติดต่อฉันได้ที่:
             <a href="mailto:S34513@banbung.ac.th">S34513@banbung.ac.th</a>
